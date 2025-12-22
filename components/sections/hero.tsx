@@ -48,13 +48,13 @@ export const Hero = () => {
           </div>
         </div>
         <div className={"flex items-center lg:ml-10"}>
-          <div className={"rounded-3xl"}>
+          <div className={"rounded-3xl w-full"}>
             <picture>
               <source media="(max-width: 768px)" srcSet={truckImageMobile.src ?? truckImageMobile} />
               <img
                 src={truckImage.src ?? truckImage}
                 alt="Evacuator auto nonstop în Chișinău, intervenție rapidă 24/7"
-                className="w-full rounded-3xl object-cover sm:max-h-[394px]"
+                className="max-h-[250px] w-full rounded-3xl object-cover sm:max-h-[394px]"
                 loading="eager"
                 fetchPriority="high"
                 width={1600}
