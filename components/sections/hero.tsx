@@ -54,6 +54,7 @@ export const Hero = () => {
               className={"max-h-[250px] rounded-3xl object-cover sm:max-h-[394px]"}
               priority={true}
               sizes={'(max-width: 768px) 100vw, 50vw'}
+              fetchPriority={'high'}
             />
           </div>
         </div>
