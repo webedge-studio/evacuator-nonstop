@@ -3,12 +3,12 @@ import Image from "next/image";
 import { AppButton } from "@/components/shared/app-button";
 
 import phoneIcon from "@/assets/icons/phone-icon.svg";
-import image1 from "@/assets/images/gallery/galerie-1.webp";
-import image2 from "@/assets/images/gallery/galerie-2.png";
-import image3 from "@/assets/images/gallery/galerie-3.webp";
-import image4 from "@/assets/images/gallery/galerie-4.jpg";
-import image5 from "@/assets/images/gallery/galerie-5.jpg";
-import image6 from "@/assets/images/gallery/galerie-6.jpg";
+import image1 from "@/assets/images/gallery/evacuator-auto-chisinau-transport-autoturism-platforma-nonstop.webp";
+import image2 from "@/assets/images/gallery/evacuator-auto-chisinau-transport-suv-platforma.webp"
+import image3 from "@/assets/images/gallery/evacuator-auto-noaptea-chisinau.webp";
+import image4 from "@/assets/images/gallery/evacuator-auto-chisinau-transport-autoturism-platforma.webp";
+import image5 from "@/assets/images/gallery/evacuator-auto-nonstop-chisinau.webp";
+import image6 from "@/assets/images/gallery/evacuator-auto-iveco-daily-chisinau-nonstop.webp";
 
 export const Gallery = () => {
   return (
@@ -24,45 +24,58 @@ export const Gallery = () => {
             <div className="col-span-1 h-full drop-shadow-[0_3px_32px_rgba(0,0,0,0.08)] lg:col-span-2">
               <Image
                 src={image1}
-                alt={"Evacuator auto în Chișinău transportă dubă avariată pe platformă, intervenție rapidă non-stop."}
-                className={"h-full max-h-[120px] rounded-2xl object-cover object-[50%_35%] md:max-h-[200px]"}
+                alt={"Evacuator auto transportând autoturism pe platformă în Chișinău, intervenție non-stop"}
+                className={"h-full max-h-[120px] rounded-2xl object-cover md:object-[50%_50%] md:max-h-[200px]"}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
             <div className="col-span-1 h-full drop-shadow-[0_3px_32px_rgba(0,0,0,0.08)]">
               <Image
                 src={image2}
-                alt={"Image 2"}
-                className={"h-full max-h-[120px] rounded-2xl object-cover object-center md:max-h-[200px]"}
+                alt={"Evacuator auto transportând SUV pe platformă în Chișinău, intervenție non-stop"}
+                className={"h-full max-h-[120px] rounded-2xl object-cover object-[50%_40%] md:object-[50%_50%]   md:max-h-[200px]"}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
             <div className="col-span-2 h-full drop-shadow-[0_3px_32px_rgba(0,0,0,0.08)] md:col-span-1 lg:col-span-2">
               <Image
                 src={image3}
-                alt={"Image 3"}
-                className={"max-h-[120px] rounded-2xl object-cover object-[50%_60%] md:max-h-[200px]"}
+                alt={"Evacuator auto noaptea în Chișinău, intervenție non-stop pentru tractare vehicule"}
+                className={"max-h-[120px] rounded-2xl object-cover object-[50%_40%] md:object-[50%_60%] md:max-h-[200px]"}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           </div>
           <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-5">
             <div className="col-span-1 h-full drop-shadow-[0_3px_32px_rgba(0,0,0,0.08)]">
               <Image
-                src={image4}
-                alt={"Image 4"}
-                className={"h-full max-h-[120px] rounded-2xl object-cover object-center md:max-h-[200px]"}
+                src={image6}
+                alt={"Evacuator auto Iveco Daily în Chișinău, disponibil pentru intervenții non-stop"}
+                className={"h-full max-h-[120px] rounded-2xl object-cover object-[50%_50%] md:object-[50%_50%] md:max-h-[200px]"}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
+ 
             </div>
             <div className="col-span-1 h-full drop-shadow-[0_3px_32px_rgba(0,0,0,0.08)] lg:col-span-2">
               <Image
                 src={image5}
-                alt={"Image 5"}
-                className={"h-full max-h-[120px] rounded-2xl object-cover object-[50%_65%] md:max-h-[200px]"}
+                alt={"Evacuator auto nonstop în Chișinău, intervenție rapidă 24/7"}
+                className={"h-full max-h-[120px] rounded-2xl object-cover md:object-[50%_50%] md:max-h-[200px]"}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
             <div className="col-span-2 h-full drop-shadow-[0_3px_32px_rgba(0,0,0,0.08)] md:col-span-1 lg:col-span-2">
               <Image
-                src={image6}
-                alt={"Image 6"}
-                className={"h-full max-h-[120px] rounded-2xl object-cover object-[50%_55%] md:max-h-[200px]"}
+                src={image4}
+                alt={"Evacuator auto transportând autoturism pe platformă în Chișinău, intervenție non-stop"}
+                className={"max-h-[120px] rounded-2xl object-cover object-[50%_40%] md:object-[50%_60%] md:max-h-[200px]"}
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           </div>
