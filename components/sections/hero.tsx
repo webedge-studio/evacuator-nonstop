@@ -6,6 +6,7 @@ import { HeroInfoClient } from "@/components/sections/hero-info-client";
 import { InfoStat } from "@/components/shared/info-stat";
 
 import truckImage from "@/assets/images/sections/evacuator-auto-nonstop-chisinau.webp";
+import truckImageMobile from "@/assets/images/sections/evacuator-auto-nonstop-chisinau-mobile.webp";
 import phone from "@/assets/icons/phone-icon.svg";
 import whatsapp from "@/assets/icons/whatsapp-icon.svg";
 
@@ -48,13 +49,19 @@ export const Hero = () => {
         </div>
         <div className={"flex items-center lg:ml-10"}>
           <div className={"rounded-3xl"}>
-            <Image
-              src={truckImage}
-              alt={"Evacuator auto nonstop în Chișinău, intervenție rapidă 24/7"}
-              className={"max-h-[250px] rounded-3xl object-cover sm:max-h-[394px]"}
-              priority={true}
-              sizes={'(max-width: 768px) 100vw, 50vw'}
-            />
+            <picture>
+              <source media="(max-width: 768px)" srcSet={truckImageMobile.src ?? truckImageMobile} />
+              <img
+                src={truckImage.src ?? truckImage}
+                alt="Evacuator auto nonstop în Chișinău, intervenție rapidă 24/7"
+                className="w-full rounded-3xl object-cover sm:max-h-[394px]"
+                loading="eager"
+                fetchPriority="high"
+                width={1600}
+                height={900}
+              />
+            </picture>
+            
           </div>
         </div>
       </div>
