@@ -12,7 +12,7 @@ import batteryIcon from "@/assets/icons/battery-icon.svg";
 import keyIcon from "@/assets/icons/key-icon.svg";
 import phoneIcon from "@/assets/icons/phone-icon.svg";
 
-export default function OurServices() {
+export const OurServices = () => {
   const servicesJsonLd = buildServicesJsonLd();
 
   return (
@@ -99,4 +99,4 @@ export default function OurServices() {
       />
     </section>
   );
-}
+};

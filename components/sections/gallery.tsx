@@ -10,7 +10,7 @@ import image4 from "@/assets/images/gallery/evacuator-auto-chisinau-transport-au
 import image5 from "@/assets/images/gallery/evacuator-auto-nonstop-chisinau.webp";
 import image6 from "@/assets/images/gallery/evacuator-auto-iveco-daily-chisinau-nonstop.webp";
 
-export default function Gallery() {
+export const Gallery = () => {
   return (
     <section className="bg-[#F8FAFC]" id="gallery">
       <h2 className="sr-only">
@@ -138,4 +138,4 @@ export default function Gallery() {
       </div>
     </section>
   );
-}
+};

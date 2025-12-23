@@ -1,23 +1,16 @@
 import React from "react";
 
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
 import { AppButton } from "@/components/shared/app-button";
 
+import { TestimonialsClient } from "@/components/sections/testimonials-client";
 import { buildReviewsJsonLd } from "@/lib/reviewsSchema";
 import { reviews } from "@/lib/constants/reviews";
 
 import phoneIcon from "@/assets/icons/phone-icon.svg";
 
-const TestimonialsClient = dynamic(
-  () => import("@/components/sections/testimonials-client"),
-  {
-    loading: () => null,
-  },
-);
-
-export default function Testimonials() {
+export const Testimonials = () => {
   const reviewsJsonLd = buildReviewsJsonLd({
     url: "https://evacuator-nonstop.md/",
     businessName: "Evacuator Nonstop",
@@ -69,4 +62,4 @@ export default function Testimonials() {
       />
     </section>
   );
-}
+};

@@ -4,7 +4,7 @@ import { FaqClient } from "@/components/sections/faq-client";
 import { buildFaqJsonLd } from "@/lib/faqSchema";
 import { questions } from "@/lib/constants/questions";
 
-export default function Faq() {
+export const Faq = () => {
   const faqJsonLd = buildFaqJsonLd(questions);
 
   return (
@@ -40,4 +40,4 @@ export default function Faq() {
       </div>
     </section>
   );
-}
+};

@@ -8,7 +8,7 @@ import busIcon from "@/assets/icons/bus-icon.svg";
 import tractorIcon from "@/assets/icons/tractor-icon.svg";
 import phoneIcon from "@/assets/icons/phone-icon.svg";
 
-export default function Pricing() {
+export const Pricing = () => {
   return (
     <section
       className={
@@ -70,4 +70,4 @@ export default function Pricing() {
       />
     </section>
   );
-}
+};
