@@ -1,12 +1,30 @@
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 import { Hero } from "@/components/sections/hero";
-import { OurServices } from "@/components/sections/our-services";
-import { Pricing } from "@/components/sections/pricing";
-import { Gallery } from "@/components/sections/gallery";
-import { Faq } from "@/components/sections/faq";
-import { Testimonials } from "@/components/sections/testimonials";
 import { buildLocalBusinessJsonLd } from "@/lib/localBusinessSchema";
+
+const OurServices = dynamic(
+  () => import("@/components/sections/our-services"),
+  {
+    loading: () => null,
+  },
+);
+const Pricing = dynamic(() => import("@/components/sections/pricing"), {
+  loading: () => null,
+});
+const Gallery = dynamic(() => import("@/components/sections/gallery"), {
+  loading: () => null,
+});
+const Faq = dynamic(() => import("@/components/sections/faq"), {
+  loading: () => null,
+});
+const Testimonials = dynamic(
+  () => import("@/components/sections/testimonials"),
+  {
+    loading: () => null,
+  },
+);
 
 export const metadata: Metadata = {
   title: "Evacuator auto nonstop Chișinău | 24/7",
@@ -28,7 +46,8 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Evacuator auto nonstop Chișinău | 24/7",
-    description: "Intervenție rapidă 15–20 min în Chișinău și suburbii. Transport sigur, prețuri transparente.",
+    description:
+      "Intervenție rapidă 15–20 min în Chișinău și suburbii. Transport sigur, prețuri transparente.",
     url: "/",
     siteName: "Evacuator Nonstop",
     type: "website",

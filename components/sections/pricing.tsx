@@ -8,14 +8,23 @@ import busIcon from "@/assets/icons/bus-icon.svg";
 import tractorIcon from "@/assets/icons/tractor-icon.svg";
 import phoneIcon from "@/assets/icons/phone-icon.svg";
 
-export const Pricing = () => {
+export default function Pricing() {
   return (
-    <section className={"container flex flex-col items-center justify-center py-12 md:py-16"} id="pricing">
+    <section
+      className={
+        "container flex flex-col items-center justify-center py-12 md:py-16"
+      }
+      id="pricing"
+    >
       <h2 className={"section-heading mt-2 text-center md:max-w-[776px]"}>
         Prețuri în funcție de masa autovehiculului
       </h2>
 
-      <p className={"py-4 text-center text-sm leading-6 text-black/70 md:max-w-2xl md:text-base"}>
+      <p
+        className={
+          "py-4 text-center text-sm leading-6 text-black/70 md:max-w-2xl md:text-base"
+        }
+      >
         Tarife transparente, stabilite corect în funcție de greutatea mașinii.
       </p>
 
@@ -42,15 +51,23 @@ export const Pricing = () => {
           content="Evacuare utilitare grele cu platformă dedicată, rapid și sigur."
           price="900"
           secondPrice={"12"}
-          icon={<Image src={tractorIcon} alt={"Tractor Icon"} className={"scale-x-[-1] opacity-80"} />}
+          icon={
+            <Image
+              src={tractorIcon}
+              alt={"Tractor Icon"}
+              className={"scale-x-[-1] opacity-80"}
+            />
+          }
         />
       </div>
       <AppButton
-        className={"bg-primary mt-12 h-[52px] rounded-xl px-6 py-4 text-base text-black sm:px-12"}
+        className={
+          "bg-primary mt-12 h-[52px] rounded-xl px-6 py-4 text-base text-black sm:px-12"
+        }
         label={"Cere intervenție rapidă"}
         icon={<Image src={phoneIcon} alt="Phone icon" />}
         iconPosition={"left"}
       />
     </section>
   );
-};
+}

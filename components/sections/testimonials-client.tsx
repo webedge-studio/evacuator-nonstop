@@ -7,7 +7,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { ReviewItem } from "@/components/shared/review-item";
 import { reviews } from "@/lib/constants/reviews";
 
-export const TestimonialsClient = () => {
+export default function TestimonialsClient() {
   const testimonialsSwiperConfig = {
     modules: [Autoplay, Pagination],
     className: "testimonials-swiper",
@@ -17,7 +17,11 @@ export const TestimonialsClient = () => {
     loop: true,
     speed: 600,
     autoHeight: true,
-    pagination: { clickable: true, el: ".swiper-pagination-testimonial", dynamicBullets: true },
+    pagination: {
+      clickable: true,
+      el: ".swiper-pagination-testimonial",
+      dynamicBullets: true,
+    },
     autoplay: {
       delay: 3000,
     },
@@ -40,11 +44,15 @@ export const TestimonialsClient = () => {
         {!!reviews?.length &&
           reviews?.map((item, index) => (
             <SwiperSlide key={index}>
-              <ReviewItem value={item?.rating} content={item?.body} author={`${item?.author}, ${item?.area}`} />
+              <ReviewItem
+                value={item?.rating}
+                content={item?.body}
+                author={`${item?.author}, ${item?.area}`}
+              />
             </SwiperSlide>
           ))}
       </Swiper>
       <div className="swiper-pagination-testimonial relative mt-8 text-center"></div>
     </div>
   );
-};
+}
