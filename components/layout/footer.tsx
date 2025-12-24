@@ -7,9 +7,11 @@ import instagram from "@/assets/icons/instagram.svg";
 import logo from "@/assets/images/branding/evacuator-logo-new.svg";
 
 export const Footer = () => (
-  <footer className="overflow-hidden bg-[#F3F4F5] py-20" id="footer">
+  <footer className="overflow-hidden bg-[#F3F4F5] pt-16 pb-10" id="footer">
     <div className={"container"}>
-      <div className={"flex flex-col gap-12 md:justify-between lg:flex-row"}>
+      <div
+        className={"flex flex-col gap-12 md:justify-between mb-2 lg:flex-row"}
+      >
         <div className="flex flex-col gap-4 pb-4">
           <div className="text-xl font-semibold">Contacte</div>
           <div className="flex flex-col justify-center gap-4">
@@ -56,7 +58,7 @@ export const Footer = () => (
       <hr className={"py-2.5"} />
       <div
         className={
-          "flex flex-col items-start justify-between gap-4 md:flex-row md:items-center"
+          "flex flex-col items-start justify-between mt-2 gap-4 md:flex-row md:items-center"
         }
       >
         <Image
