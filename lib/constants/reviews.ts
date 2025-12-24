@@ -14,13 +14,13 @@ export const reviews: ReviewItem[] = [
     body: "Preț corect, comunicare rapidă, totul fără stres. Recomand 100%.",
   },
   {
-    author: "Daniel R., Rîșcani",
+    author: "Daniel R.",
     area: "Rîșcani",
     rating: 5,
     body: "Am avut accident seara, au venit imediat și au rezolvat totul.",
   },
   {
-    author: "Elena D.",
+    author: "Ion R.",
     area: "Telecentru",
     rating: 5,
     body: "Evacuatorul a ajuns rapid în Chișinău, preț corect și comunicare excelentă.",
