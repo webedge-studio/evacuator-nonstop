@@ -55,8 +55,8 @@ export const Hero = () => {
                   className={"h-3.5 w-3.5"}
                 />
               }
-              label={"Sună acum – 069 640 892"}
-              linkRef="tel:+37369640892"
+              label={"Sună acum – 067 294 661"}
+              linkRef="tel:+37367294661"
               className="bg-primary h-[44px] rounded-xl px-6 py-3 text-sm text-black md:text-base"
             />
             <AppButton
@@ -68,8 +68,9 @@ export const Hero = () => {
                   className={"h-3.5 w-3.5"}
                 />
               }
+              target={"_blank"}
               label={"WhatsApp"}
-              linkRef="tel:+37369640892"
+              linkRef="https://wa.me/37367294661?text=Buna%20ziua,%20am%20nevoie%20de%20evacuator%20auto%20in%20Chisinau."
               className="bg-whatsapp hover:bg-whatsapp-dark rounded-lg px-6 py-2.5 text-sm text-white md:text-base"
             />
           </div>

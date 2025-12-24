@@ -4,7 +4,7 @@ export function buildServicesJsonLd() {
     "@type": "LocalBusiness",
     name: "Evacuator Nonstop",
     url: "https://evacuator-nonstop.md/",
-    telephone: "+37369640892",
+    telephone: "+37367294661",
     areaServed: ["Chișinău", "suburbii Chișinău", "Moldova"],
     address: {
       "@type": "PostalAddress",

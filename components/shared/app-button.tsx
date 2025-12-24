@@ -11,6 +11,7 @@ interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   iconPosition?: "left" | "right";
   iconClassName?: string;
   linkRef?: string;
+  target?: "_blank" | "_self";
 }
 
 export function AppButton({
@@ -20,25 +21,39 @@ export function AppButton({
   className,
   iconClassName,
   linkRef,
+  target,
   ...props
 }: AppButtonProps) {
   const renderButton = () => (
     <Button
       className={cn(
         "default-transition hover:bg-yellow-card gap-2.5 bg-black/75 text-xs font-semibold hover:-translate-y-[1px] hover:cursor-pointer md:text-sm",
-        className
+        className,
       )}
       {...props}
     >
       {/* Icon pe stânga */}
-      {icon && iconPosition === "left" && <span className={cn("icon", iconClassName)}>{icon}</span>}
+      {icon && iconPosition === "left" && (
+        <span className={cn("icon", iconClassName)}>{icon}</span>
+      )}
 
       <span>{label}</span>
 
       {/* Icon pe dreapta */}
-      {icon && iconPosition === "right" && <span className={cn("icon", iconClassName)}>{icon}</span>}
+      {icon && iconPosition === "right" && (
+        <span className={cn("icon", iconClassName)}>{icon}</span>
+      )}
     </Button>
   );
 
-  return linkRef ? <Link href={linkRef}>{renderButton()}</Link> : renderButton();
+  return linkRef ? (
+    <Link
+      href={linkRef}
+      {...(target ? { target, rel: "noopener noreferrer" } : {})}
+    >
+      {renderButton()}
+    </Link>
+  ) : (
+    renderButton()
+  );
 }

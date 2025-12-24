@@ -12,7 +12,7 @@ export const buildLocalBusinessJsonLd = () => {
     description:
       "Servicii evacuator auto nonstop în Chișinău. Tractare auto, transport pe platformă, asistență rutieră 24/7 pentru autoturisme, SUV-uri, microbuze și utilitare.",
 
-    telephone: "+37369640892",
+    telephone: "+37367294661",
     priceRange: "500–900 MDL",
 
     address: {
@@ -29,7 +29,15 @@ export const buildLocalBusinessJsonLd = () => {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
         opens: "00:00",
         closes: "23:59",
       },

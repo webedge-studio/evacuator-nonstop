@@ -16,10 +16,10 @@ export const Footer = () => (
             <div className={"flex items-center gap-4"}>
               <Image src={phone} alt={"Phone icon"} />
               <Link
-                href="tel:+37369640892"
+                href="tel:+37367294661"
                 className="hover:text-primary/70 text-sm transition-all duration-150 ease-in-out hover:cursor-pointer"
               >
-                +373 69 640 892
+                +373 67 294 661
               </Link>
             </div>
             <div className={"flex items-center gap-4"}>
@@ -47,14 +47,26 @@ export const Footer = () => (
             <p className="text-sm">Chișinău, Republica Moldova</p>
           </div>
           <div className={"flex items-center gap-4"}>
-            <p className="text-sm">Evacuator auto non-stop în Chișinău și suburbii, disponibil 24/7.</p>
+            <p className="text-sm">
+              Evacuator auto non-stop în Chișinău și suburbii, disponibil 24/7.
+            </p>
           </div>
         </div>
       </div>
       <hr className={"py-2.5"} />
-      <div className={"flex flex-col items-start justify-between gap-4 md:flex-row md:items-center"}>
-        <Image src={logo} alt="Logo" className={"max-w-[130px] lg:max-w-[200px]"} />
-        <div className={"text-xs"}>© 2025 Evacuator Nonstop. Toate drepturile rezervate.</div>
+      <div
+        className={
+          "flex flex-col items-start justify-between gap-4 md:flex-row md:items-center"
+        }
+      >
+        <Image
+          src={logo}
+          alt="Logo"
+          className={"max-w-[130px] lg:max-w-[200px]"}
+        />
+        <div className={"text-xs"}>
+          © 2025 Evacuator Nonstop. Toate drepturile rezervate.
+        </div>
       </div>
     </div>
   </footer>

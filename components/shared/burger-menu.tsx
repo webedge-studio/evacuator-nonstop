@@ -18,7 +18,10 @@ export const BurgerMenu = () => {
 
   const closeMenu = () => setIsOpen(false);
 
-  const handleScroll = (e: MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+  const handleScroll = (
+    e: MouseEvent<HTMLAnchorElement>,
+    sectionId: string,
+  ) => {
     e.preventDefault();
     closeMenu();
     setTimeout(() => goToSection(sectionId), 500);
@@ -58,33 +61,57 @@ export const BurgerMenu = () => {
       <div
         className={cn(
           "fixed top-[111px] right-0 bottom-0 left-0 z-40 flex flex-col bg-white/93 backdrop-blur-sm transition-transform duration-250 ease-out lg:hidden",
-          isOpen ? "translate-y-0" : "translate-y-full"
+          isOpen ? "translate-y-0" : "translate-y-full",
         )}
       >
         <nav className="font-montserrat-alternates mt-12 flex flex-1 flex-col items-center gap-2 text-lg font-medium text-black/80">
-          <Link href="/" onClick={(e) => handleScroll(e, "services")} className="group default-transition py-2">
+          <Link
+            href="/"
+            onClick={(e) => handleScroll(e, "services")}
+            className="group default-transition py-2"
+          >
             <span className="link">Servicii</span>
           </Link>
-          <Link href="/" onClick={(e) => handleScroll(e, "pricing")} className="group default-transition py-2">
+          <Link
+            href="/"
+            onClick={(e) => handleScroll(e, "pricing")}
+            className="group default-transition py-2"
+          >
             <span className="link">Prețuri</span>
           </Link>
-          <Link href="/" onClick={(e) => handleScroll(e, "gallery")} className="group default-transition py-2">
+          <Link
+            href="/"
+            onClick={(e) => handleScroll(e, "gallery")}
+            className="group default-transition py-2"
+          >
             <span className="link">Gelerie</span>
           </Link>
-          <Link href="/" onClick={(e) => handleScroll(e, "testimonials")} className="group default-transition py-2">
+          <Link
+            href="/"
+            onClick={(e) => handleScroll(e, "testimonials")}
+            className="group default-transition py-2"
+          >
             <span className="link">Recenzii</span>
           </Link>
           <div className="mt-6">
             <AppButton
-              icon={<Image src={phone} alt={"Phone icon"} className={"h-3.5 w-3.5"} />}
-              label={"069 640 892"}
-              linkRef="tel:+37369640892"
+              icon={
+                <Image
+                  src={phone}
+                  alt={"Phone icon"}
+                  className={"h-3.5 w-3.5"}
+                />
+              }
+              label={"067 294 661"}
+              linkRef="tel:+37367294661"
               className="bg-primary h-[44px] rounded-xl px-12 py-3 text-sm text-black md:text-base"
             />
           </div>
         </nav>
 
-        <div className="px-6 pb-6 text-xs text-neutral-500">© {new Date().getFullYear()} Evacuator Nonstop</div>
+        <div className="px-6 pb-6 text-xs text-neutral-500">
+          © {new Date().getFullYear()} Evacuator Nonstop
+        </div>
       </div>
     </>
   );

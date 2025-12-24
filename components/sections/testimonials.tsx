@@ -14,7 +14,7 @@ export const Testimonials = () => {
   const reviewsJsonLd = buildReviewsJsonLd({
     url: "https://evacuator-nonstop.md/",
     businessName: "Evacuator Nonstop",
-    telephone: "+37369640892",
+    telephone: "+37367294661",
     addressLocality: "Chișinău",
     addressCountry: "MD",
     reviews,
@@ -53,6 +53,7 @@ export const Testimonials = () => {
       <TestimonialsClient />
 
       <AppButton
+        linkRef="tel:+37367294661"
         className={
           "bg-primary mt-4 h-[52px] rounded-xl px-6 py-4 text-base text-black sm:px-12"
         }

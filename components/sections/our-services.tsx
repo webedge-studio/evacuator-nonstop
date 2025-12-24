@@ -90,6 +90,7 @@ export const OurServices = () => {
         />
       </div>
       <AppButton
+        linkRef={"tel:+37367294661"}
         className={
           "bg-primary mt-12 h-[52px] rounded-xl px-6 py-4 text-base text-black sm:px-12"
         }

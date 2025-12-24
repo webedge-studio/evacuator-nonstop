@@ -14,7 +14,6 @@ export const Gallery = () => {
   return (
     <section className="bg-[#F8FAFC]" id="gallery">
       <h2 className="sr-only">
-        {" "}
         Evacuator auto în Chișinău – intervenții reale, tractare și transport
         auto
       </h2>
@@ -127,6 +126,7 @@ export const Gallery = () => {
             Chișinău.
           </p>
           <AppButton
+            linkRef={"tel:+37367294661"}
             className={
               "bg-primary h-[52px] rounded-xl px-4 py-4 text-base text-black sm:px-12"
             }
