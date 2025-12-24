@@ -17,7 +17,7 @@ export const Footer = () => (
               <Image src={phone} alt={"Phone icon"} />
               <Link
                 href="tel:+37367294661"
-                className="hover:text-primary/70 text-sm transition-all duration-150 ease-in-out hover:cursor-pointer"
+                className="hover:text-primary-dark text-sm transition-all duration-150 ease-in-out hover:cursor-pointer"
               >
                 +373 67 294 661
               </Link>
@@ -26,7 +26,7 @@ export const Footer = () => (
               <Image src={mail} alt={"Mail icon"} />
               <Link
                 href={"mailto:evacuator-nonstop@gmail.com"}
-                className="hover:text-primary/70 text-sm transition-all duration-150 ease-in-out hover:cursor-pointer"
+                className="hover:text-primary-dark text-sm transition-all duration-150 ease-in-out hover:cursor-pointer"
               >
                 evacuator-nonstop@gmail.com
               </Link>
@@ -35,7 +35,7 @@ export const Footer = () => (
               <Image src={instagram} alt={"Instagram icon"} />
               <Link
                 href={"https://www.instagram.com/evacuator.nonstop/"}
-                className="hover:text-primary/70 text-sm transition-all duration-150 ease-in-out hover:cursor-pointer"
+                className="hover:text-primary-dark text-sm transition-all duration-150 ease-in-out hover:cursor-pointer"
               >
                 evacuator.nonstop
               </Link>
