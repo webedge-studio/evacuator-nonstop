@@ -60,7 +60,7 @@ export const BurgerMenu = () => {
 
       <div
         className={cn(
-          "fixed top-[111px] right-0 bottom-0 left-0 z-40 flex flex-col bg-white/93 backdrop-blur-sm transition-transform duration-250 ease-out lg:hidden",
+          "fixed top-[111px] right-0 bottom-[-20px] left-0 z-40 flex flex-col bg-white/93 backdrop-blur-sm transition-transform duration-250 ease-out lg:hidden",
           isOpen ? "translate-y-0" : "translate-y-full",
         )}
       >
